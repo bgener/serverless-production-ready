@@ -7,6 +7,6 @@ To see a live demonstration of this slideshow presentation navigate to https://g
 
 ```bash
 npm install -g node-static
-cd .\offline\
-static -p 8000
+cd .\PITCHME\
+static -p 8001
 ```
