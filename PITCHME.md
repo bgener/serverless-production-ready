@@ -1,17 +1,16 @@
 ### Production-ready Serverless
- 
+
 ---
 
 ### What you will learn
 
 - Setup local environment
+- Setup cloud environment
 - Logging
 - Debugging
-- Deployment
-- Permissions
-- Monitoring
+- CI & Deployment
 - Testing
-- Troubleshooting
+- Monitoring & Troubleshooting
 
 Note:
 Show experience with aws console
@@ -94,6 +93,16 @@ See more: https://github.com/localstack/localstack
 
 ---
 
+### Setup cloud environment
+
+Notes:
+
+Talk about permissions from IT point of view: users, roles, groups and policies
+Use existing resources rather than generate new
+1000 of policies for different actions
+CloudTrail
+---
+
 ### Logging: basic
 
 ```javascript
@@ -170,6 +179,43 @@ module.exports.handler = (event, context, callback) => {
 ```
 
 Note:
-CloudWatch log entries have requestId (context.awsRequestId)
+Show how to find CloudWatch logs
+Mention that CloudWatch log entries have requestId (context.awsRequestId) that can be used as corellation id
+
+---
+
+### Debugging
+
+---
+
+#### Debugging: Serverless offline
+
+---
+
+#### Debugging: SAM local
+
+---
+
+### CI & Deployment
+
+Notes:
+Use aws tools vs existing tools such as TeamCity and Octopus
+Deployment with aws cli/powershell vs Serverless vs CloudFormation scripts vs Terraform
+
+---
+
+### Testing
+
+---
+
+#### Unit test
+
+---
+
+#### Integration tests
+
+---
+
+### Monitoring & Troubleshooting
 
 ---

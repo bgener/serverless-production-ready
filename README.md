@@ -8,5 +8,5 @@ To see a live demonstration of this slideshow presentation navigate to https://g
 ```bash
 npm install -g node-static
 cd .\PITCHME\
-static -p 8001
+static -p 8001 -c 1
 ```
